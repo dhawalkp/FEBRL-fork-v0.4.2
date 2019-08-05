@@ -1,31 +1,31 @@
 # =============================================================================
 # AUSTRALIAN NATIONAL UNIVERSITY OPEN SOURCE LICENSE (ANUOS LICENSE)
 # VERSION 1.3
-# 
+#
 # The contents of this file are subject to the ANUOS License Version 1.3
 # (the "License"); you may not use this file except in compliance with
 # the License. You may obtain a copy of the License at:
-# 
+#
 #   https://sourceforge.net/projects/febrl/
-# 
+#
 # Software distributed under the License is distributed on an "AS IS"
 # basis, WITHOUT WARRANTY OF ANY KIND, either express or implied. See
 # the License for the specific language governing rights and limitations
 # under the License.
-# 
+#
 # The Original Software is: "generate2.py"
-# 
+#
 # The Initial Developers of the Original Software are:
 #   Dr Peter Christen (Research School of Computer Science, The Australian
 #                      National University)
 #   Mr Agus Pudjijono (Department of Computer Science, The Australian
 #                      National University)
-# 
+#
 # Copyright (C) 2002 - 2011 the Australian National University and
 # others. All Rights Reserved.
-# 
+#
 # Contributors:
-# 
+#
 # Alternatively, the contents of this file may be used under the terms
 # of the GNU General Public License Version 2 or later (the "GPL"), in
 # which case the provisions of the GPL are applicable instead of those
@@ -327,9 +327,9 @@ givenname_dict = {'name':'given_name',
               'ins_prob':0.05,
               'del_prob':0.15,
               'sub_prob':0.35,
-            'trans_prob':0.05,
-         'val_swap_prob':0.02,
-         'wrd_swap_prob':0.02,
+            'trans_prob':0.09,
+         'val_swap_prob':0.00,
+         'wrd_swap_prob':0.00,
           'spc_ins_prob':0.01,
           'spc_del_prob':0.01,
              'miss_prob':0.02,
@@ -354,9 +354,9 @@ surname_dict = {'name':'surname',
             'ins_prob':0.10,
             'del_prob':0.10,
             'sub_prob':0.35,
-          'trans_prob':0.04,
-       'val_swap_prob':0.02,
-       'wrd_swap_prob':0.02,
+          'trans_prob':0.08,
+       'val_swap_prob':0.00,
+       'wrd_swap_prob':0.00,
         'spc_ins_prob':0.01,
         'spc_del_prob':0.02,
            'miss_prob':0.02,
@@ -380,9 +380,9 @@ title_dict = {'name':'title',
            'ins_prob':0.01,
            'del_prob':0.01,
            'sub_prob':0.01,
-         'trans_prob':0.01,
-      'val_swap_prob':0.01,
-      'wrd_swap_prob':0.01,
+         'trans_prob':0.03,
+      'val_swap_prob':0.00,
+      'wrd_swap_prob':0.00,
        'spc_ins_prob':0.01,
        'spc_del_prob':0.02,
           'miss_prob':0.60,
@@ -402,9 +402,9 @@ streetnumber_dict = {'name':'street_number',
                  'ins_prob':0.10,
                  'del_prob':0.15,
                  'sub_prob':0.60,
-               'trans_prob':0.05,
-            'val_swap_prob':0.05,
-            'wrd_swap_prob':0.01,
+               'trans_prob':0.11,
+            'val_swap_prob':0.00,
+            'wrd_swap_prob':0.00,
              'spc_ins_prob':0.00,
              'spc_del_prob':0.00,
                 'miss_prob':0.02,
@@ -424,9 +424,9 @@ address1_dict = {'name':'address_1',
              'ins_prob':0.10,
              'del_prob':0.15,
              'sub_prob':0.55,
-           'trans_prob':0.05,
-        'val_swap_prob':0.02,
-        'wrd_swap_prob':0.03,
+           'trans_prob':0.10,
+        'val_swap_prob':0.00,
+        'wrd_swap_prob':0.00,
          'spc_ins_prob':0.02,
          'spc_del_prob':0.03,
             'miss_prob':0.04,
@@ -449,9 +449,9 @@ address2_dict = {'name':'address_2',
              'ins_prob':0.04,
              'del_prob':0.04,
              'sub_prob':0.10,
-           'trans_prob':0.02,
-        'val_swap_prob':0.03,
-        'wrd_swap_prob':0.04,
+           'trans_prob':0.09,
+        'val_swap_prob':0.00,
+        'wrd_swap_prob':0.00,
          'spc_ins_prob':0.02,
          'spc_del_prob':0.01,
             'miss_prob':0.60,
@@ -476,9 +476,9 @@ suburb_dict = {'name':'suburb',
            'ins_prob':0.10,
            'del_prob':0.15,
            'sub_prob':0.22,
-         'trans_prob':0.04,
-      'val_swap_prob':0.01,
-      'wrd_swap_prob':0.02,
+         'trans_prob':0.07,
+      'val_swap_prob':0.00,
+      'wrd_swap_prob':0.00,
        'spc_ins_prob':0.02,
        'spc_del_prob':0.02,
           'miss_prob':0.01,
@@ -501,8 +501,8 @@ postcode_dict = {'name':'postcode',
              'ins_prob':0.00,
              'del_prob':0.00,
              'sub_prob':0.35,
-           'trans_prob':0.60,
-        'val_swap_prob':0.03,
+           'trans_prob':0.63,
+        'val_swap_prob':0.00,
         'wrd_swap_prob':0.00,
          'spc_ins_prob':0.00,
          'spc_del_prob':0.00,
@@ -522,8 +522,8 @@ state_dict = {'name':'state',
           'ins_prob':0.10,
           'del_prob':0.10,
           'sub_prob':0.55,
-        'trans_prob':0.02,
-     'val_swap_prob':0.03,
+        'trans_prob':0.05,
+     'val_swap_prob':0.00,
      'wrd_swap_prob':0.00,
       'spc_ins_prob':0.00,
       'spc_del_prob':0.00,
@@ -545,8 +545,8 @@ dob_dict = {'name':'date_of_birth',
         'ins_prob':0.00,
         'del_prob':0.00,
         'sub_prob':0.50,
-      'trans_prob':0.30,
-   'val_swap_prob':0.05,
+      'trans_prob':0.35,
+   'val_swap_prob':0.00,
    'wrd_swap_prob':0.00,
     'spc_ins_prob':0.00,
     'spc_del_prob':0.00,
@@ -566,8 +566,8 @@ age_dict = {'name':'age',
         'ins_prob':0.00,
         'del_prob':0.00,
         'sub_prob':0.30,
-      'trans_prob':0.20,
-   'val_swap_prob':0.20,
+      'trans_prob':0.40,
+   'val_swap_prob':0.00,
    'wrd_swap_prob':0.00,
     'spc_ins_prob':0.00,
     'spc_del_prob':0.00,
@@ -586,8 +586,8 @@ sex_dict = {'name':'sex',
         'ins_prob':0.00,
         'del_prob':0.00,
         'sub_prob':0.30,
-      'trans_prob':0.20,
-   'val_swap_prob':0.20,
+      'trans_prob':0.40,
+   'val_swap_prob':0.00,
    'wrd_swap_prob':0.00,
     'spc_ins_prob':0.00,
     'spc_del_prob':0.00,
@@ -647,8 +647,8 @@ phonenum_dict = {'name':'phone_number',
              'ins_prob':0.00,
              'del_prob':0.00,
              'sub_prob':0.40,
-           'trans_prob':0.30,
-        'val_swap_prob':0.15,
+           'trans_prob':0.45,
+        'val_swap_prob':0.00,
         'wrd_swap_prob':0.00,
          'spc_ins_prob':0.00,
          'spc_del_prob':0.00,
@@ -665,15 +665,15 @@ ssid_dict = {'name':'soc_sec_id',
          'start_id':1000000,
            'end_id':9999999,
       'select_prob':0.05,
-         'ins_prob':0.00,
+         'ins_prob':0.15,
          'del_prob':0.00,
-         'sub_prob':0.50,
-       'trans_prob':0.40,
-    'val_swap_prob':0.10,
+         'sub_prob':0.00,
+       'trans_prob':0.00,
+    'val_swap_prob':0.00,
     'wrd_swap_prob':0.00,
      'spc_ins_prob':0.00,
      'spc_del_prob':0.00,
-        'miss_prob':0.00,
+        'miss_prob':0.85,
      'new_val_prob':0.00,
          'ocr_prob':0.01,
     'ocr_fail_prob':0.05,
@@ -706,7 +706,7 @@ blocking_dict = {'name':'blocking_number',
 #
 field_swap_prob = {('address_1',  'address_2'):0.02,
                    ('given_name', 'surname'):  0.05,
-                   ('postcode',   'suburb'):   0.01}
+                   ('postcode',   'suburb'):   0.0}
 
 # -----------------------------------------------------------------------------
 # Probabilities (between 0.0 and 1.0) for creating a typographical error (a new
